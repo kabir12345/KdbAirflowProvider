@@ -1,3 +1,8 @@
+"""
+    Executes a KDB query and returns the result.
+
+    This operator is designed to integrate KDB, a high-performance column-store database, into Apache Airflow pipelines. It allows users to connect to a KDB instance, execute a query, and handle the results within a DAG.
+"""
 from airflow.models import BaseOperator
 from qpython import qconnection
 
